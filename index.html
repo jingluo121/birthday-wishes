@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>生日快乐特效</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+  <!-- 祝福语 -->
+  <div class="blessing">
+    <h1 class="title">🎂 生日快乐 🎉</h1>
+    <p class="subtitle">我说幸福就是你在我身边 <span class="heart">꒰๑𖥦๑꒱</span></p >
+  </div>
+
+  <!-- 蛋糕 -->
+  <div class="cake-container">
+    <div class="cake">
+      <div class="candle">
+        <div class="flame"></div>
+      </div>
+      <div class="top-layer"></div>
+      <div class="middle-layer"></div>
+      <div class="bottom-layer"></div>
+    </div>
+  </div>
+
+  <!-- 祝福卡片 -->
+  <div class="card">
+    <p>愿你的每一天都充满阳光与欢笑</p >
+    <p>每一刻都被爱与温暖包围</p >
+    <div class="signature">—— 亲爱的尹冬香</div>
+  </div>
+
+  <!-- 按钮 -->
+  <div class="buttons">
+    <button id="confettiBtn">放烟花</button>
+    <button id="musicBtn">播放音乐</button>
+    <button id="messageBtn">查看祝福</button>
+  </div>
+
+  <!-- 飘落效果 -->
+  <div class="falling-elements">
+    <!-- 通过JS生成 -->
+  </div>
+
+  <!-- 弹窗 -->
+  <div class="modal" id="messageModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>生日祝福 💌</h2>
+      <p class="greeting">乖宝：</p >
+      <p class="indent-text">生日快乐！</p >
+      <p class="indent-text">这是陪你过的第一个生日，很开心我们能够在亿万人海中相遇，出现在彼此的生命里，相逢的意义在于照亮对方，希望我们珍惜彼此共同成长，也希望这份汹涌的爱意可以撑过每个四季。</p>
+      <p>愿我们的爱情长存，</p >
+      <p>未来的每一天都如此甜蜜。</p >
+      <p class="emoji">🎂🎁🎈🎊🎉</p >
+    </div>
+  </div>
+
+  <!-- 音频 -->
+  <audio id="birthdayMusic" loop>
+    <source src="../生日祝福/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<canvas id="confettiCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
